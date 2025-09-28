@@ -1,14 +1,14 @@
 package Automobil;
 
 public class Automobil {
-    // 5 obeležja sa različitim tipovima
+    // obeležja sa različitim tipovima
     String marka;        // String
     String model;        // String  
     int godina;          // int
     double cena;         // double
     boolean jeNov;       // boolean
     
-    // 1. Podrazumevani konstruktor
+    // podrazumevani konstruktor
     public Automobil() {
         marka = "Nepoznato";
         model = "Nepoznato";
@@ -17,7 +17,7 @@ public class Automobil {
         jeNov = false;
     }
     
-    // 2. Konstruktor sa 3 parametra (overloading)
+    // konstruktor sa 3 parametra (overloading)
     public Automobil(String marka, String model, int godina) {
         this.marka = marka;
         this.model = model;
@@ -26,7 +26,7 @@ public class Automobil {
         this.jeNov = true;
     }
     
-    // 3. Konstruktor sa svim parametrima (overloading)
+    // konstruktor sa svim parametrima (overloading)
     public Automobil(String marka, String model, int godina, double cena, boolean jeNov) {
         this.marka = marka;
         this.model = model;
@@ -35,11 +35,12 @@ public class Automobil {
         this.jeNov = jeNov;
     }
     
-    // Jednostavna metoda za prikaz
+    // metoda za prikaz
     public void prikazi() {
         System.out.println(marka + " " + model + " (" + godina + ")");
         System.out.println("Cena: " + cena + " €");
         System.out.println("Nov: " + (jeNov ? "Da" : "Ne"));
         System.out.println("-------------");
     }
+
 }
